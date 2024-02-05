@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@300&display=swap');
+
+body, html {
+    background-color: rgb(207, 210, 202);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    height: 100%;
+    margin: 0;
+}
+
+.periodic-table-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 70%;
+    position: relative;
+}
+
+.periodic-table {
+    transform: translateY(6%);
+    display: flex;
+}
+
+.periodic-table-element-empty {
+    margin: 1.5px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    padding: 3px;
+}
+
+.periodic-table-element {
+    margin: 1.5px;
+    padding: 3px;
+    width: 32px;
+    height: 32px;
+    background-color: rgb(147, 153, 220);
+    color: rgb(45, 43, 47);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.periodic-table-metals {
+    background-color: #4d9de0 !important;
+}
+
+.periodic-table-nonmetals {
+    background-color: #fecb02 !important;
+}
+ 
+.periodic-table-metaloidy {
+    background-color: #71d6ca !important;
+}
+
+.periodic-table-noble-gases {
+    background-color: #ff8352 !important;
+}
+
+.periodic-table-lanthanides {
+    background-color: #7776bc !important;
+}
+
+.periodic-table-actinides {
+    background-color: #57c78b !important;
+    
+}
+
+.periodic-table-group-number {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 5px 0px;
+}
+
+.periodic-table-period-number {
+    margin: 1.5px;
+    padding: 3px 5px;
+    height: 32px;
+    color: rgb(45, 43, 47);
+    text-align: right;
+}
+
+.periodic-table-period-number-empty {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 5px 0px;
+    color: transparent;
+    user-select: none;
+}
+
+.periodic-table-period-number {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 1.5px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.periodic-table-lanthanides-actinides {
+    margin-top: 4%;
+}
+
+.periodic-table-main-container-lanthanides-actinides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.element-info {
+    width: 30%;
+    border-right: rgb(134, 136, 130) solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.element {
+    width: 30vh;
+    height: 30vh;
+    background-color: rgb(180, 183, 174);
+    border: rgb(162, 161, 163) solid 2px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.element-symbol {
+    text-align: center;
+    font-size: 90px;
+    font-weight: 900;
+}
+
+.element-name {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.element-info-text {
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+table {
+    min-width:     84%;
+    max-width:     85%;
+    align-self: center;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+}
+
+.search-element {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+}
+
+.search-element-input-container {
+    width: 50%;
+    display: inline-block;
+}
+
+.search-element-input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 24px;
+    border-radius: 12px;
+    border: none;
+    background-color: rgb(235, 235, 235);
+}
+
+.search-element-input:focus {
+    outline: none;
+}
+
+.search-element-input:active {
+    outline: none;
+}
+
+.search-active {
+    transform: scale(1.30);
+    background-color: #eb4163 !important;
+    border-radius: 3px;
+}

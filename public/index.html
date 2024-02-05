@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="element-info">
+            <div>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <div id="element-color-info" class="element">
+                        <div>
+                            <div class="element-symbol">?</div>
+                            <div class="element-name"></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <div class="element-info-text">
+                        <div style="  display: flex;
+                        justify-content: center;">
+                            <table>
+                                <tr>
+                                    <td style="width: 40%;">Atomic Mass</td>
+                                    <td style="width: 60%; text-align: center; font-weight: 300;" id="atomic-mass">Unknown</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 40%;">Atomic Number</td>
+                                    <td style="width: 60%; text-align: center; font-weight: 300;" id="atomic-number">Unknown</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 40%;">Boiling point</td>
+                                    <td style="width: 60%; text-align: center; font-weight: 300;" id="boiling-point">Unknown</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 40%;">Melting point</td>
+                                    <td style="width: 60%; text-align: center; font-weight: 300;" id="melting-point">Unknown</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 40%;">Electronegativity</td>
+                                    <td style="width: 60%; text-align: center; font-weight: 300;" id="electronegativity-pauling">Unknown</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 40%;">Apperance</td>
+                                    <td style="width: 60%; text-align: center; font-weight: 300;" id="apperance">Unknown</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 40%;">Density</td>
+                                    <td style="width: 60%; text-align: center; font-weight: 300;" id="density">Unknown</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 40%;">Discovered By</td>
+                                    <td style="width: 60%; text-align: center; font-weight: 300;" id="discovered-by">Unknown</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 40%;">Named By</td>
+                                    <td style="width: 60%; text-align: center; font-weight: 300;" id="named-by">Unknown</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 40%;">Electron Configuration</td>
+                                    <td style="width: 60%; text-align: center; font-weight: 300;" id="electron-configuration">Unknown</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="periodic-table-main-container">
+            <div class="search-element">
+                <div class="search-element-input-container">
+                    <input type="text" class="search-element-input" placeholder="Search for a element...">
+                    <!-- <button class="search-element-input-button"><img src="./icons8-search.svg" /></button> -->
+                </div>
+            </div>
+            <div>
+                <div class="periodic-table">
+                    <div class="periodic-table-group">
+                        <div class="periodic-table-period-number-empty">0</div>
+                        <div class="periodic-table-period-number">1</div>
+                        <div class="periodic-table-period-number">2</div>
+                        <div class="periodic-table-period-number">3</div>
+                        <div class="periodic-table-period-number">4</div>
+                        <div class="periodic-table-period-number">5</div>
+                        <div class="periodic-table-period-number">6</div>
+                        <div class="periodic-table-period-number">7</div>
+                    </div>
+                    <div class="periodic-table-group">
+                        <div class="periodic-table-group-number">1</div>
+                        <div class="periodic-table-element periodic-table-nonmetals">H</div>
+                        <div class="periodic-table-element periodic-table-metals">Li</div>
+                        <div class="periodic-table-element periodic-table-metals">Na</div>
+                        <div class="periodic-table-element periodic-table-metals">K</div>
+                        <div class="periodic-table-element periodic-table-metals">Rb</div>
+                        <div class="periodic-table-element periodic-table-metals">Cs</div>
+                        <div class="periodic-table-element periodic-table-metals">Fr</div>
+                    </div>
+                    <div class="periodic-table-group">
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-group-number">2</div>
+                        <div class="periodic-table-element periodic-table-metals">Be</div>
+                        <div class="periodic-table-element periodic-table-metals">Mg</div>
+                        <div class="periodic-table-element periodic-table-metals">Ca</div>
+                        <div class="periodic-table-element periodic-table-metals">Sr</div>
+                        <div class="periodic-table-element periodic-table-metals">Ba</div>
+                        <div class="periodic-table-element periodic-table-metals">Ra</div>
+                    </div>
+                    <div class="periodic-table-group">
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-group-number">3</div>
+                        <div class="periodic-table-element periodic-table-metals">Sc</div>
+                        <div class="periodic-table-element periodic-table-metals">Y</div>
+                        <div class="periodic-table-element periodic-table-lanthanides">La</div>
+                        <div class="periodic-table-element periodic-table-actinides">Ac</div>
+                    </div>
+                    <div class="periodic-table-group">
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-group-number">4</div>
+                        <div class="periodic-table-element periodic-table-metals">Ti</div>
+                        <div class="periodic-table-element periodic-table-metals">Zr</div>
+                        <div class="periodic-table-element periodic-table-metals">Hf</div>
+                        <div class="periodic-table-element periodic-table-metals">Rf</div>
+                    </div>
+                    <div class="periodic-table-group">
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-group-number">5</div>
+                        <div class="periodic-table-element periodic-table-metals">V</div>
+                        <div class="periodic-table-element periodic-table-metals">Nb</div>
+                        <div class="periodic-table-element periodic-table-metals">Ta</div>
+                        <div class="periodic-table-element periodic-table-metals">Db</div>
+                    </div>
+                    <div class="periodic-table-group">
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-group-number">6</div>
+                        <div class="periodic-table-element periodic-table-metals">Cr</div>
+                        <div class="periodic-table-element periodic-table-metals">Mo</div>
+                        <div class="periodic-table-element periodic-table-metals">W</div>
+                        <div class="periodic-table-element periodic-table-metals">Sg</div>
+                    </div>
+                    <div class="periodic-table-group">
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-group-number">7</div>
+                        <div class="periodic-table-element periodic-table-metals">Mn</div>
+                        <div class="periodic-table-element periodic-table-metals">Tc</div>
+                        <div class="periodic-table-element periodic-table-metals">Re</div>
+                        <div class="periodic-table-element periodic-table-metals">Bh</div>
+                    </div>
+                    <div class="periodic-table-group">
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-group-number">8</div>
+                        <div class="periodic-table-element periodic-table-metals">Fe</div>
+                        <div class="periodic-table-element periodic-table-metals">Ru</div>
+                        <div class="periodic-table-element periodic-table-metals">Os</div>
+                        <div class="periodic-table-element periodic-table-metals">Hs</div>
+                    </div>
+                    <div class="periodic-table-group">
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-group-number">9</div>
+                        <div class="periodic-table-element periodic-table-metals">Co</div>
+                        <div class="periodic-table-element periodic-table-metals">Rh</div>
+                        <div class="periodic-table-element periodic-table-metals">Ir</div>
+                        <div class="periodic-table-element periodic-table-metals">Mt</div>
+                    </div>
+                    <div class="periodic-table-group">
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-group-number">10</div>
+                        <div class="periodic-table-element periodic-table-metals">Ni</div>
+                        <div class="periodic-table-element periodic-table-metals">Pd</div>
+                        <div class="periodic-table-element periodic-table-metals">Pt</div>
+                        <div class="periodic-table-element periodic-table-metals">Ds</div>
+                    </div>
+                    <div class="periodic-table-group">
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-group-number">11</div>
+                        <div class="periodic-table-element periodic-table-metals">Cu</div>
+                        <div class="periodic-table-element periodic-table-metals">Ag</div>
+                        <div class="periodic-table-element periodic-table-metals">Au</div>
+                        <div class="periodic-table-element periodic-table-metals">Rg</div>
+                    </div>
+                    <div class="periodic-table-group">
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-group-number">12</div>
+                        <div class="periodic-table-element periodic-table-metals">Zn</div>
+                        <div class="periodic-table-element periodic-table-metals">Cd</div>
+                        <div class="periodic-table-element periodic-table-metals">Hg</div>
+                        <div class="periodic-table-element periodic-table-metals">Cn</div>
+                    </div>
+                    <div class="periodic-table-group">
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-group-number">13</div>
+                        <div class="periodic-table-element periodic-table-metaloidy">B</div>
+                        <div class="periodic-table-element periodic-table-metals">Al</div>
+                        <div class="periodic-table-element periodic-table-metals">Ga</div>
+                        <div class="periodic-table-element periodic-table-metals">In</div>
+                        <div class="periodic-table-element periodic-table-metals">Tl</div>
+                        <div class="periodic-table-element periodic-table-metals">Nh</div>
+                    </div>
+                    <div class="periodic-table-group">
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-group-number">14</div>
+                        <div class="periodic-table-element periodic-table-nonmetals">C</div>
+                        <div class="periodic-table-element periodic-table-metaloidy">Si</div>
+                        <div class="periodic-table-element periodic-table-metaloidy">Ge</div>
+                        <div class="periodic-table-element periodic-table-metals">Sn</div>
+                        <div class="periodic-table-element periodic-table-metals">Pb</div>
+                        <div class="periodic-table-element periodic-table-metals">Fl</div>
+                    </div>
+                    <div class="periodic-table-group">
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-group-number">15</div>
+                        <div class="periodic-table-element periodic-table-nonmetals">N</div>
+                        <div class="periodic-table-element periodic-table-nonmetals">P</div>
+                        <div class="periodic-table-element periodic-table-metaloidy">As</div>
+                        <div class="periodic-table-element periodic-table-metaloidy">Sb</div>
+                        <div class="periodic-table-element periodic-table-metals">Bi</div>
+                        <div class="periodic-table-element periodic-table-metals">Mc</div>
+                    </div>
+                    <div class="periodic-table-group">
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-group-number">16</div>
+                        <div class="periodic-table-element periodic-table-nonmetals">O</div>
+                        <div class="periodic-table-element periodic-table-nonmetals">S</div>
+                        <div class="periodic-table-element periodic-table-nonmetals">Se</div>
+                        <div class="periodic-table-element periodic-table-metaloidy">Te</div>
+                        <div class="periodic-table-element periodic-table-metaloidy">Po</div>
+                        <div class="periodic-table-element periodic-table-metals">Lv</div>
+                    </div>
+                    <div class="periodic-table-group">
+                        <div class="periodic-table-element-empty"></div>
+                        <div class="periodic-table-group-number">17</div>
+                        <div class="periodic-table-element periodic-table-nonmetals">F</div>
+                        <div class="periodic-table-element periodic-table-nonmetals">Cl</div>
+                        <div class="periodic-table-element periodic-table-nonmetals">Br</div>
+                        <div class="periodic-table-element periodic-table-nonmetals">I</div>
+                        <div class="periodic-table-element periodic-table-metaloidy">At</div>
+                        <div class="periodic-table-element periodic-table-metals">Ts</div>
+                    </div>
+                    <div class="periodic-table-group">
+                        <div class="periodic-table-group-number">18</div>
+                        <div class="periodic-table-element periodic-table-noble-gases">He</div>
+                        <div class="periodic-table-element periodic-table-noble-gases">Ne</div>
+                        <div class="periodic-table-element periodic-table-noble-gases">Ar</div>
+                        <div class="periodic-table-element periodic-table-noble-gases">Kr</div>
+                        <div class="periodic-table-element periodic-table-noble-gases">Xe</div>
+                        <div class="periodic-table-element periodic-table-noble-gases">Rn</div>
+                        <div class="periodic-table-element periodic-table-metals">Og</div>
+                    </div>
+                </div>
+                <div class="periodic-table-main-container-lanthanides-actinides">
+                    <div class="periodic-table periodic-table-lanthanides-actinides">
+                        <div class="periodic-table-group">
+                            <div class="periodic-table-period-number">Actinides</div>
+                            <div class="periodic-table-period-number">Lanthanides</div>
+                        </div>
+                        <div class="periodic-table-group">
+                            <div class="periodic-table-element periodic-table-actinides">Ce</div>
+                            <div class="periodic-table-element periodic-table-lanthanides">Th</div>
+                        </div>
+                        <div class="periodic-table-group">
+                            <div class="periodic-table-element periodic-table-actinides">Pr</div>
+                            <div class="periodic-table-element periodic-table-lanthanides">Pa</div>
+                        </div>
+                        <div class="periodic-table-group">
+                            <div class="periodic-table-element periodic-table-actinides">Nd</div>
+                            <div class="periodic-table-element periodic-table-lanthanides">U</div>
+                        </div>
+                        <div class="periodic-table-group">
+                            <div class="periodic-table-element periodic-table-actinides">Pm</div>
+                            <div class="periodic-table-element periodic-table-lanthanides">Np</div>
+                        </div>
+                        <div class="periodic-table-group">
+                            <div class="periodic-table-element periodic-table-actinides">Sm</div>
+                            <div class="periodic-table-element periodic-table-lanthanides">Pu</div>
+                        </div>
+                        <div class="periodic-table-group">
+                            <div class="periodic-table-element periodic-table-actinides">Eu</div>
+                            <div class="periodic-table-element periodic-table-lanthanides">Am</div>
+                        </div>
+                        <div class="periodic-table-group">
+                            <div class="periodic-table-element periodic-table-actinides">Gd</div>
+                            <div class="periodic-table-element periodic-table-lanthanides">Cm</div>
+                        </div>
+                        <div class="periodic-table-group">
+                            <div class="periodic-table-element periodic-table-actinides">Tb</div>
+                            <div class="periodic-table-element periodic-table-lanthanides">Bk</div>
+                        </div>
+                        <div class="periodic-table-group">
+                            <div class="periodic-table-element periodic-table-actinides">Dy</div>
+                            <div class="periodic-table-element periodic-table-lanthanides">Cf</div>
+                        </div>
+                        <div class="periodic-table-group">
+                            <div class="periodic-table-element periodic-table-actinides">Ho</div>
+                            <div class="periodic-table-element periodic-table-lanthanides">Es</div>
+                        </div>
+                        <div class="periodic-table-group">
+                            <div class="periodic-table-element periodic-table-actinides">Er</div>
+                            <div class="periodic-table-element periodic-table-lanthanides">Fm</div>
+                        </div>
+                        <div class="periodic-table-group">
+                            <div class="periodic-table-element periodic-table-actinides">Tm</div>
+                            <div class="periodic-table-element periodic-table-lanthanides">Md</div>
+                        </div>
+                        <div class="periodic-table-group">
+                            <div class="periodic-table-element periodic-table-actinides">Yb</div>
+                            <div class="periodic-table-element periodic-table-lanthanides">No</div>
+                        </div>
+                        <div class="periodic-table-group">
+                            <div class="periodic-table-element periodic-table-actinides">Lu</div>
+                            <div class="periodic-table-element periodic-table-lanthanides">Lr</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js" type="module"></script>
+</body>
+</html>
