@@ -9,6 +9,7 @@ git clone https://github.com/solindekdev/periodic-table && cd periodic-table
 npm init
 npm start
 ```
+App will be running on port 3000. Just type localhost:3000 into your browser
 # Preview
 ![alt](./preview/1.png)
 ![alt](./preview/2.png)
